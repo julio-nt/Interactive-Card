@@ -44,7 +44,11 @@
 							<h4 id="numero-cartao">0000 0000 0000 0000</h4>
 							<div class="nome-validade-cartao">
 								<p id="nome-cartao">JANE APPLESEED</p>
-								<p id="validade-cartao">00/00</p>
+								<div class="validade-cartao">
+									<p id="mes-validade-cartao">00</p>
+									<p>/</p>
+									<p id="ano-validade-cartao">00</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -55,7 +59,7 @@
 						alt="Fundo do cartão"
 						class="img-cartao"
 					/>
-					<p class="cvc-cartao">000</p>
+					<p id="cvc-cartao">000</p>
 				</div>
 			</div>
 
@@ -65,43 +69,52 @@
 						<legend>CARDHOLDER NAME</legend>
 						<input
 							type="text"
-							id="nome-form"
+							id="nome-cartao-form"
 							placeholder="e.g. Jane Appleseed"
 							size="30"
+							onkeyup="atualizaCartao('nome-cartao-form')"
 						/>
 					</fieldset>
 					<fieldset>
 						<legend>CARD NUMBER</legend>
 						<input
-							type="number"
+							type="tel"
 							id="numero-cartao-form"
 							placeholder="e.g. 1234 5678 9123 0000"
 							size="30"
+							maxlength="16"
+							onkeyup="atualizaCartao('numero-cartao-form')"
 						/>
 					</fieldset>
 					<div class="validade-cvc-form">
 						<fieldset class="validade-form">
 							<legend>EXP. DATE (MM/YY)</legend>
 							<input
-								type="number"
-								id="mes-validade-form"
+								type="tel"
+								id="mes-validade-cartao-form"
 								placeholder="MM"
 								size="3"
+								maxlength="2"
+								onkeyup="atualizaCartao('mes-validade-cartao-form')"
 							/>
 							<input
-								type="number"
-								id="ano-validade-form"
+								type="tel"
+								id="ano-validade-cartao-form"
 								placeholder="YY"
 								size="3"
+								maxlength="2"
+								onkeyup="atualizaCartao('ano-validade-cartao-form')"
 							/>
 						</fieldset>
 						<fieldset>
 							<legend>CVC</legend>
 							<input
-								type="number"
-								id="cvc-form"
+								type="tel"
+								id="cvc-cartao-form"
 								placeholder="e.g 123"
-								size="15"
+								size="10"
+								maxlength="3"
+								onkeyup="atualizaCartao('cvc-cartao-form')"
 							/>
 						</fieldset>
 					</div>
@@ -113,5 +126,6 @@
 		<!-- Completed state start -->
 
 		<!-- Thank you! We've added your card details Continue -->
+		<script src="./script.js"></script>
 	</body>
 </html>

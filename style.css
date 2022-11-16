@@ -50,6 +50,10 @@ main {
 	font-size: 10pt;
 }
 
+.validade-cartao {
+	display: flex;
+}
+
 .cartao-fundo {
 	display: flex;
 	position: relative;
@@ -57,7 +61,7 @@ main {
 	width: 60%;
 }
 
-.cvc-cartao {
+#cvc-cartao {
 	position: relative;
 	top: 6em;
 	margin-top: 19px;
@@ -97,16 +101,6 @@ input::placeholder {
 	color: hsl(279, 6%, 55%);
 }
 
-/* input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
-} */
-
-input[type='number'] {
-	appearance: textfield;
-}
-
 .validade-form {
 	display: flex;
 	flex-direction: row;
@@ -116,10 +110,6 @@ input[type='number'] {
 .validade-cvc-form {
 	display: flex;
 	flex-direction: row;
-}
-
-#cvc-form {
-	width: 72%;
 }
 
 button {
