@@ -14,7 +14,7 @@ main {
 
 .left-side {
 	padding-left: 10em;
-	margin-right: -10em;
+	margin-right: -15em;
 }
 
 .cartao-frente {
@@ -23,39 +23,62 @@ main {
 	margin-top: 4em;
 	padding-bottom: 2em;
 	color: white;
+	width: 60%;
+}
+
+.img-cartao {
+	width: 25em;
 }
 
 .info-cartao-frente {
 	position: relative;
-	left: -26em;
+	left: -24em;
 	top: 1em;
-}
-
-.info-escrita-cartao {
-	margin-top: 3em;
 }
 
 #numero-cartao {
 	font-size: 20pt;
+	margin-top: 2em;
 }
 
 .nome-validade-cartao {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 24em;
+	width: 27em;
+	margin-top: -2em;
+	font-size: 10pt;
 }
 
 .cartao-fundo {
 	display: flex;
 	position: relative;
 	margin-left: 5em;
+	width: 60%;
+}
+
+.cvc-cartao {
+	position: relative;
+	top: 6em;
+	margin-top: 19px;
+	left: -6em;
+	color: white;
+	height: 25px;
+	font-size: 10pt;
 }
 
 .right-side {
 	display: flex;
 	margin-top: 10em;
 	width: 50em;
+}
+
+form {
+	width: 300px;
+}
+
+form legend {
+	font-size: 8pt;
 }
 
 fieldset {
@@ -66,6 +89,12 @@ input {
 	padding: 8px;
 	border-radius: 5px;
 	border: solid hsl(279, 6%, 55%) 1px;
+	font-family: 'Space Grotesk';
+	width: 85%;
+}
+
+input::placeholder {
+	color: hsl(279, 6%, 55%);
 }
 
 /* input::-webkit-outer-spin-button,
@@ -75,7 +104,7 @@ input::-webkit-inner-spin-button {
 } */
 
 input[type='number'] {
-	-moz-appearance: textfield;
+	appearance: textfield;
 }
 
 .validade-form {
@@ -87,4 +116,22 @@ input[type='number'] {
 .validade-cvc-form {
 	display: flex;
 	flex-direction: row;
+}
+
+#cvc-form {
+	width: 72%;
+}
+
+button {
+	width: 85%;
+	margin-left: 4%;
+	padding: 10px;
+	background-color: hsl(278, 68%, 11%);
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: hsl(277, 53%, 31%);
 }
