@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Interactive card details form</title>
+		<link rel="stylesheet" href="./style.css" />
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="left-side">
+				<div class="cartao-frente">
+					<img
+						src="./images/bg-card-front.png"
+						alt="Frente do cartão"
+						class="img-cartao"
+					/>
+					<div class="info-cartao-frente">
+						<img
+							src="./images/card-logo.svg"
+							alt="Logo do cartão"
+							id="logo-cartao"
+						/>
+						<div class="info-escrita-cartao">
+							<h4 id="numero-cartao">0000 0000 0000 0000</h4>
+							<div class="nome-validade-cartao">
+								<p id="nome-cartao">JANE APPLESEED</p>
+								<p id="validade-cartao">00/00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cartao-fundo">
+					<img
+						src="./images/bg-card-back.png"
+						alt="Fundo do cartão"
+						class="img-cartao"
+					/>
+				</div>
+			</div>
+
+			<div class="right-side">
+				<form>
+					<fieldset>
+						<legend>CARDHOLDER NAME</legend>
+						<input
+							type="text"
+							id="nome-form"
+							placeholder="e.g. Jane Appleseed"
+							size="40"
+						/>
+					</fieldset>
+					<fieldset>
+						<legend>CARD NUMBER</legend>
+						<input
+							type="number"
+							id="numero-cartao-form"
+							placeholder="e.g. 1234 5678 9123 0000"
+							size="40"
+						/>
+					</fieldset>
+					<div class="validade-cvc-form">
+						<fieldset class="validade-form">
+							<legend>EXP. DATE (MM/YY)</legend>
+							<input
+								type="number"
+								id="mes-validade-form"
+								placeholder="MM"
+								size="3"
+							/>
+							<input
+								type="number"
+								id="ano-validade-form"
+								placeholder="YY"
+								size="3"
+							/>
+						</fieldset>
+						<fieldset>
+							<legend>CVC</legend>
+							<input
+								type="number"
+								id="cvc-form"
+								placeholder="e.g 123"
+								size="15"
+							/>
+						</fieldset>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<!-- Completed state start -->
+
+		Thank you! We've added your card details Continue
+
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+	</body>
+</html>
