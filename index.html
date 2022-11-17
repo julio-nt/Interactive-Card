@@ -95,6 +95,8 @@
 								placeholder="MM"
 								size="3"
 								maxlength="2"
+								min="1"
+								max="12"
 								onkeyup="atualizaCartao('mes-validade-cartao-form')"
 							/>
 							<input
@@ -116,16 +118,31 @@
 								maxlength="3"
 								onkeyup="atualizaCartao('cvc-cartao-form')"
 							/>
+							<small>Can't be blank</small>
 						</fieldset>
 					</div>
-					<button id="btn-confirm" type="submit">CONFIRM</button>
+					<button
+						id="btn-confirm"
+						onclick="completeState()"
+						type="button"
+					>
+						CONFIRM
+					</button>
 				</form>
+				<div id="complete-state">
+					<img
+						src="./images/icon-complete.svg"
+						alt="Icone da tela de confirmado"
+						class="img-confirmed"
+					/>
+					<h2>THANK YOU!</h2>
+					<p>We've added your card details</p>
+					<button>CONTINUE</button>
+				</div>
 			</div>
 		</main>
 
 		<!-- Completed state start -->
-
-		<!-- Thank you! We've added your card details Continue -->
 		<script src="./script.js"></script>
 	</body>
 </html>

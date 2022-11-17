@@ -3,7 +3,7 @@
 body {
 	background-image: url(./images/bg-main-desktop.png);
 	background-repeat: no-repeat;
-	background-size: auto cover;
+	background-size: 450px 100vh;
 	font-family: 'Space Grotesk';
 }
 
@@ -14,38 +14,38 @@ main {
 
 .left-side {
 	padding-left: 10em;
-	margin-right: -15em;
+	margin-right: -10em;
 }
 
 .cartao-frente {
 	display: flex;
 	position: relative;
-	margin-top: 4em;
+	margin-top: 5em;
 	padding-bottom: 2em;
 	color: white;
 	width: 60%;
 }
 
 .img-cartao {
-	width: 25em;
+	width: 21em;
 }
 
 .info-cartao-frente {
 	position: relative;
-	left: -24em;
-	top: 1em;
+	left: -19em;
+	top: 10px;
 }
 
 #numero-cartao {
-	font-size: 20pt;
-	margin-top: 2em;
+	font-size: 18pt;
+	margin-top: 1.8em;
 }
 
 .nome-validade-cartao {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 27em;
+	width: 21em;
 	margin-top: -2em;
 	font-size: 10pt;
 }
@@ -63,8 +63,8 @@ main {
 
 #cvc-cartao {
 	position: relative;
-	top: 6em;
-	margin-top: 19px;
+	top: 5em;
+	margin-top: 16px;
 	left: -6em;
 	color: white;
 	height: 25px;
@@ -74,6 +74,7 @@ main {
 .right-side {
 	display: flex;
 	margin-top: 10em;
+	margin-left: 5em;
 	width: 50em;
 }
 
@@ -95,10 +96,15 @@ input {
 	border: solid hsl(279, 6%, 55%) 1px;
 	font-family: 'Space Grotesk';
 	width: 85%;
+	margin-bottom: 15px;
 }
 
 input::placeholder {
 	color: hsl(279, 6%, 55%);
+}
+
+input:focus {
+	outline: none;
 }
 
 .validade-form {
@@ -110,6 +116,12 @@ input::placeholder {
 .validade-cvc-form {
 	display: flex;
 	flex-direction: row;
+}
+
+small {
+	position: fixed;
+	color: red;
+	font-size: 8pt;
 }
 
 button {
@@ -124,4 +136,9 @@ button {
 
 button:hover {
 	background-color: hsl(277, 53%, 31%);
+}
+
+#complete-state {
+	display: none;
+	text-align: center;
 }
